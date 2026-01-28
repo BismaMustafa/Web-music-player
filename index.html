@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google icons link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <i class="material-icons">favorite</i>
+            <span>Now Playing</span>
+            <i class="material-icons" id="add-song">add</i>
+             <!-- Hidden file input for selecting local songs -->
+<input type="file" id="file-input" accept="audio/*" style="display:none">
+        </div>
+        <div class="image-area">
+            <img src="images/music-5.webp" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name">Harley-bird</p>
+            <p class="artist">Jordan scho</p>
+        </div>
+        <div class="progress-area">
+
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+
+            </div>
+        </div>
+        <!-- Volume Control -->
+<div class="volume-wrapper">
+    <div class="volume-control">
+        <i class="material-icons" id="volume-icon">volume_up</i>
+        <input type="range" id="volume-slider" min="0" max="100" value="100">
+    </div>
+</div>
+
+<div class="controls">
+    <i id="repeat-plist" class="material-icons">repeat</i>
+    <i id="prev" class="material-icons prev">fast_rewind</i>
+
+    <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+    </div>
+
+    <i id="next" class="material-icons next">fast_forward</i>
+    <i id="more-music" class="material-icons">queue_music</i>
+</div>
+
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="playlist looped">repeat</i>
+            <i id="prev" class="material-icons prev" title="previous">fast_rewind</i>
+            <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons next" title="next">fast_forward</i>
+            <i id="more-music" class="material-icons" title="more music">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="materail-icons">close</i>
+        </div>
+       <ul>
+    <li>
+        <div class="row">
+            <span>Badmashi</span>
+            <p>Mankirt Aulakh</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>Before You Came</span>
+            <p>ABBA</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>Maharani</span>
+            <p>Arpit Bala</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>My Time</span>
+            <p>Jungkook</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>Rafta Rafta</span>
+            <p>Atif Aslam</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>Saiyarra</span>
+            <p>Faheem Abdullah</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+
+    <li>
+        <div class="row">
+            <span>Udaarian</span>
+            <p>Satinder Sartaaj</p>
+        </div>
+        <span class="delete-song material-icons">delete</span>
+
+    </li>
+</ul>
+
+    </div>
+   
+
+   <script src="js/script.js"></script>
+
+</body>
+</html>
